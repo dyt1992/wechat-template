@@ -1,0 +1,37 @@
+{
+  "name": "dd",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Remax Project With TypeScript",
+  "main": "index.js",
+  "keywords": [],
+  "author": "slx",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development remax build -t wechat -w",
+    "build": "cross-env NODE_ENV=production remax build -t wechat",
+    "analyze": "cross-env NODE_ENV=production remax build -t -a wechat"
+  },
+  "dependencies": {
+    "@react-hook/debounce": "^4.0.0",
+    "@remax/plugin-sass": "^1.0.0",
+    "@types/wechat-miniprogram": "^3.4.0",
+    "@vant/weapp": "^1.8.0",
+    "async-validator": "^4.0.1",
+    "axios": "^0.21.1",
+    "constate": "^3.3.0",
+    "cos-wx-sdk-v5": "^1.0.10",
+    "dayjs": "^1.10.6",
+    "js-md5": "^0.7.3",
+    "react": "^17.0.2",
+    "react-query": "^3.19.4",
+    "remax": "^2.15.4"
+  },
+  "devDependencies": {
+    "@types/js-md5": "^0.4.3",
+    "@types/react": "^17.0.17",
+    "cross-env": "^7.0.3",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.5"
+  }
+}
